@@ -1,0 +1,757 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========================================NAVBAR================================================================ */
+.navbar {
+
+    height: 4rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: none;
+    background-color: none;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.13);
+
+}
+
+
+
+/* -----------------------SIDE-LOGO-FULLDIV---------------*/
+.namelogo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0.4rem;
+}
+
+/* -------------------------------------nav bar mynamelogo  J's styl---------------------------------------- */
+
+
+/*style of the  J letteer of nav side logo */
+.fa-solid.fa-j {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* background div style of the nav side logo */
+.namelogo i {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    /* background-color: rgb(186, 157, 246); */
+    background-color: #91a8ec;
+    
+
+    border-radius: 50%;
+    padding: .20rem;
+    margin-left: 5px;
+    font-weight: 900;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.namelogotext {
+    font-size: 1.10rem;
+    padding-left: 0.3rem;
+}
+
+span p {
+    /* font-family: 'Young Serif', serif; */
+    font-family: 'Lexend Mega', sans-serif;
+
+}
+
+
+.fa-solid.fa-envelope {
+    padding-top: 0.20rem;
+    transition: 0.5s;
+
+
+}
+
+.fa-solid.fa-phone {
+    padding-top: 0.20rem;
+    transition: 0.5s;
+    animation: ringing 2.5s ease-in-out 0s infinite normal;
+
+}
+
+@keyframes ringing {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+
+.contact_logos {
+    display: flex;
+    align-items: center;
+    margin-right: 3.20rem;
+}
+
+.contact_logos span {
+    margin-right: 3.80rem;
+    transition: 0.50s;
+
+}
+
+.contact_logos span:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    color: #9fc3d6;
+}
+
+.contact_logos a {
+    display: flex;
+    color: #302d2def;
+    text-decoration: none;
+    /* font-size: 1.30rem; */
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+}
+
+.contact_logos a:hover {
+    color: #8da3e6;
+}
+
+
+/* --------------------------------------------NAVBAR MENU ICON------------------------------------ */
+.fa-solid.fa-bars {
+    position: absolute;
+    right: 8px;
+    top: 12px;
+    font-size: 2rem;
+    display: none;
+
+}
+
+/* =========================================== HERO SECTION============================================================================== */
+
+#fullwrapper {
+    /* position: absolute;
+    top: 21rem;
+    left: -2rem; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 15rem;
+    /* border: 2px solid green; */
+}
+
+section ,body{
+    /* border: 2px solid rgb(34, 0, 255); */
+    height: 90vh;
+    background-color: rgb(255, 243, 243);
+
+}
+
+#contact {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: #01ff73;
+    height: 5rem;
+
+}
+
+
+/*---------------------------- profile pic settings---------------------------------------------- */
+.profilepic {
+    /* position: absolute;
+    left: 24.5rem; */
+    /* bottom: 1rem; */
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    /*border: 10px solid rgb(167, 125, 249); */
+    border: 10px solid #37393d;
+    box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5);
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.profilepic img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.profilepic img:hover {
+    transform: scale(1.1);
+}
+
+.herotext {
+    max-width: 500px;
+    /* margin-left: 64rem; */
+}
+
+.herotext p {
+    font-size: 1.30rem;
+    font-weight: 500;
+    font-family: Geologica;
+    color: #000000;
+    line-height: 1.55rem;
+    padding-top: 0.2rem;
+    font-family: 'Archivo Narrow', sans-serif;
+    letter-spacing: 0.60px;
+}
+
+
+/* ------------------------hero text------------------------------------------------ */
+#hi {
+    font-family: 'Kanit', sans-serif;
+    letter-spacing: 0.20rem;
+}
+
+#hiemoji {
+    font-size: 3rem;
+    margin-left: -1.2rem;
+    animation: wave-animation 1.8s 0s infinite;
+    transform-origin: 70% 70%;
+    /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.nameaka {
+    /* FONT-FAMILY: 'Young Serif', serif; */
+    font-family: 'Lexend Mega', sans-serif;
+
+    font-size: 0.80rem;
+    letter-spacing: 0.40rem;
+
+}
+
+.herotext h2 {
+    font-size: 2rem;
+    /* font-family: 'Sora', sans-serif; */
+    font-family: 'Lexend Mega', sans-serif;
+
+    margin-bottom: 0.50rem;
+    /* color: rgb(206, 184, 250); */
+    color:#23a095;
+}
+
+.herotext h1 {
+    font-family: Press Start 2P;
+}
+
+#Skillnames {
+    color: #8da3e6;
+    /* font-family: 'Young Serif', serif; */
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: 900;
+
+
+}
+
+/* ---------------buttons------------------------- */
+
+
+.butongroup {
+    margin: 40px 0px 30px 0px;
+    transition: 0.50s;
+
+
+}
+
+.butongroup a {
+    font-size: 1.750rem;
+    text-decoration: none;
+
+}
+
+
+.butongroup .btn1 {
+ 
+    border: 2.3px solid black;
+    border-radius: 8px;
+    box-shadow: 1px 2px 0.8px 1px rgba(0 0 0/100%);
+    background-color: #f7cb46;
+    color: #f0ebd8;
+    font-weight: 900;
+        padding: 10px 112px 10px 112px;
+        margin-right: 10px;
+        transition: 0.30s;
+
+}
+
+
+
+.btn1:hover {
+    border: 2px solid rgb(58, 56, 56);
+    background-color: #e24330;
+    color: #000000;
+}
+
+.butongroup:hover {
+
+    transform: scale(1.03);
+}
+
+
+/* -------------------Social icons------------------------- */
+
+
+.herotext .socials i {
+    /* color: rgb(248, 253, 224); */
+    margin-right: 1.7rem;
+    font-size: 1.78rem;
+    transition: 0.5s;
+
+}
+/* -------------------social colors------------------ */
+
+.herotext .socials .fa-facebook{
+    color: #3b5998;
+    
+}
+
+.herotext .socials .fa-instagram{
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 590;
+}
+
+.herotext .socials .fa-linkedin{
+    color: #0072b1;
+    
+}
+
+.herotext .socials .fa-youtube{
+    color: #c4302b;
+
+    
+}
+
+.herotext .socials .fa-soundcloud{
+    color: #ff7700;
+}
+    
+/* -------------------social animations------------------ */
+.herotext .socials .fa-facebook:hover {
+    color: #3b5998;
+    transform: rotate(360deg);
+}
+
+.herotext .socials .fa-instagram:hover {
+    color: #feda75;
+    transform: rotate(360deg);
+}
+
+.herotext .socials .fa-linkedin:hover {
+    color: #0072b1;
+    transform: rotate(360deg);
+}
+
+.herotext .socials .fa-youtube:hover {
+    color: #c4302b;
+
+    transform: rotate(360deg);
+}
+
+.herotext .socials .fa-soundcloud:hover {
+    color: #ff7700;
+    transform: rotate(360deg);
+}
+
+.socials {
+    margin-left: 20px;
+    animation: socialsfloating 2.8s ease-in-out 0.40s infinite;
+}
+
+@keyframes socialsfloating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 5px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+
+
+/* ================================footer================================================= */
+#footer_contact {
+    height: 5rem;
+    background-color: none;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#footer_contact p {
+    padding-top: 0.8rem;
+    /* margin-left: 2rem; */
+    font-size: 0.75rem;
+}
+
+.fa-solid.fa-phone,
+.fa-solid.fa-envelope {
+    padding-right: 10px;
+}
+
+
+.copyright {
+    font-size: 1.05rem;
+    padding-left: 95px;
+    margin-top: 0.30rem;
+
+
+}
+
+#csymbol {
+    font-size: 17px;
+    color: #45443e;
+}
+
+/* ------------responsive------------------------- */
+
+@media (max-width:937px) {
+
+    #fullwrapper {
+        display: block;
+    }
+
+    .herotext {
+        max-width: 500px;
+        margin-left: 10rem;
+    }
+
+    .herotext h2 {
+        display: none;
+    }
+
+    .profilepic {
+        margin-left: 15rem;
+    }
+
+    #footer_contact {
+        margin-top: 20rem;
+    }
+}
+
+/* ------------------2nd query--------------------------- */
+@media (max-width:680px) {
+
+    #fullwrapper {
+        display: block;
+    }
+
+    .herotext {
+        max-width: 500px;
+        margin-left: 5rem;
+        margin-top: 3rem;
+    }
+
+    .profilepic {
+        margin-left: 10rem;
+        height: 320px;
+        width: 320px;
+        border-radius: 50%;
+    }
+}
+
+/* ------------------3rd query--------------------------- */
+@media (max-width:572px) {
+
+    #fullwrapper {
+        display: block;
+    }
+
+    .herotext {
+        max-width: 400px;
+        margin-left: 6rem;
+        padding-top: 0.70rem;
+    }
+
+    .herotext p {
+        font-size: 1.25rem;
+        font-weight: 500;
+
+    }
+
+
+    .profilepic {
+        margin-left: 6rem;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+    }
+
+
+}
+
+/* ------------------4th query--------------------------- */
+@media (max-width:506px) {
+
+    #fullwrapper {
+        display: block;
+    }
+
+    .herotext {
+        margin-left: 3rem;
+    }
+
+    .herotext p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+
+    .profilepic {
+        margin-left: 6rem;
+        height: 280px;
+        width: 280px;
+        border-radius: 50%;
+    }
+
+    .socials {
+        margin-left: 5.8rem;
+    }
+
+    .btn1 {
+        margin-left: 4rem;
+
+    }
+
+    /* -------3 menu bar query---------- */
+    .fa-solid.fa-bars {
+
+        display: flex;
+
+    }
+
+    .contact_logos {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+
+    }
+
+    .contact_logos {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+
+    }
+
+    .contact_logos.active {
+        display: flex;
+    }
+
+}
+
+/* ------------------5th query--------------------------- */
+@media (max-width:464px) {
+
+    #fullwrapper {
+        display: block;
+    }
+
+    .herotext {
+        margin-left: 2.5rem;
+        padding-top: 0.70rem;
+    }
+
+    .herotext p {
+        font-size: 0.90rem;
+        font-weight: 500;
+    }
+
+    .herotext h1 {
+        font-size: 1.6rem;
+    }
+
+    .profilepic {
+        margin-left: 5rem;
+        height: 260px;
+        width: 260px;
+        border-radius: 50%;
+
+    }
+
+
+
+
+
+
+    
+
+}
+
+/* ------------------6th query--------------------------- */
+
+@media (max-width:377px) {
+
+    #fullwrapper {
+        display: block;
+    }
+
+    .herotext {
+        max-width: 300px;
+        padding-top: 0.70rem;
+        max-height: 100px;
+        padding-top: 0.70rem;
+
+    }
+
+
+    .profilepic {
+        height: 230px;
+        width: 230px;
+        border-radius: 50%;
+    }
+
+    .herotext p {
+        font-size: 0.90rem;
+        font-weight: 500;
+    }
+
+    .herotext h1 {
+        font-size: 1.4rem;
+    }
+
+
+    .socials {
+        margin-left:-0.99rem;
+
+    }
+
+    .btn1 {
+        margin-left: -1.5rem;
+
+    }
+
+    
+}
+
+/* ------------------7th query--------------------------- */
+@media (max-width:320px) {
+
+    #fullwrapper {
+        display: block;
+    }
+
+    .herotext {
+        max-width: 260px;
+        padding-top: 0.70rem;
+
+    }
+
+    .herotext p {
+        font-size: 0.88rem;
+        font-weight: 500;
+    }
+
+    .herotext h1 {
+        font-size: 1.25rem;
+    }
+
+    #footer_contact {
+        height: 6rem;
+    }
+
+    .profilepic {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .socials {
+        margin-left: -1rem;
+        font-size: 0.80rem;
+    }
+
+    .btn1 {
+        margin-left: -2rem;
+    }
+
+
+
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
