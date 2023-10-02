@@ -651,10 +651,15 @@ body {
         padding: 1rem;
 
     }
+    #email_logo{
+padding-bottom: 0.90rem;
+padding-top: 0.50rem;
+    }
 
     .contact_logos.active {
         display: flex;
     }
+
 
 }
 
