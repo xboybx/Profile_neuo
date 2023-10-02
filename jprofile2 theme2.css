@@ -50,7 +50,7 @@ html {
     width: 40px;
     /* background-color: rgb(186, 157, 246); */
     background-color: #91a8ec;
-    
+
 
     border-radius: 50%;
     padding: .20rem;
@@ -87,16 +87,39 @@ span p {
 }
 
 @keyframes ringing {
+
     0% {
-        transform: rotate(10deg);
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
     }
 
     50% {
-        transform: rotate(0deg);
+        transform: rotate(10.0deg)
     }
 
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    /* Reset for the last half to pause */
     100% {
-        transform: rotate(10deg);
+        transform: rotate(0.0deg)
     }
 }
 
@@ -156,7 +179,8 @@ span p {
     /* border: 2px solid green; */
 }
 
-section ,body{
+section,
+body {
     /* border: 2px solid rgb(34, 0, 255); */
     height: 90vh;
     background-color: rgb(255, 243, 243);
@@ -300,7 +324,7 @@ section ,body{
 
     margin-bottom: 0.50rem;
     /* color: rgb(206, 184, 250); */
-    color:#23a095;
+    color: #23a095;
 }
 
 .herotext h1 {
@@ -334,16 +358,16 @@ section ,body{
 
 
 .butongroup .btn1 {
- 
+
     border: 2.3px solid black;
     border-radius: 8px;
     box-shadow: 1px 2px 0.8px 1px rgba(0 0 0/100%);
-        background-color: #f7cb46;
+    background-color: #f7cb46;
     color: #f0ebd8;
     font-weight: 900;
-        padding: 10px 112px 10px 112px;
-        margin-right: 10px;
-        transition: 0.30s;
+    padding: 10px 112px 10px 112px;
+    margin-right: 10px;
+    transition: 0.30s;
 
 }
 
@@ -371,35 +395,36 @@ section ,body{
     transition: 0.5s;
 
 }
+
 /* -------------------social colors------------------ */
 
-.herotext .socials .fa-facebook{
+.herotext .socials .fa-facebook {
     color: #3b5998;
-    
+
 }
 
-.herotext .socials .fa-instagram{
-    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+.herotext .socials .fa-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     font-weight: 590;
 }
 
-.herotext .socials .fa-linkedin{
+.herotext .socials .fa-linkedin {
     color: #0072b1;
-    
+
 }
 
-.herotext .socials .fa-youtube{
+.herotext .socials .fa-youtube {
     color: #c4302b;
 
-    
+
 }
 
-.herotext .socials .fa-soundcloud{
+.herotext .socials .fa-soundcloud {
     color: #ff7700;
 }
-    
+
 /* -------------------social animations------------------ */
 .herotext .socials .fa-facebook:hover {
     color: #3b5998;
@@ -530,7 +555,8 @@ section ,body{
         width: 320px;
         border-radius: 50%;
     }
-    .profilepic{
+
+    .profilepic {
         box-shadow: none;
     }
 }
@@ -562,6 +588,9 @@ section ,body{
         border-radius: 50%;
     }
 
+    .herotext h1 {
+        font-size: 1.20rem;
+    }
 
 }
 
@@ -662,7 +691,7 @@ section ,body{
 
 
     .socials {
-        margin-left:4.1rem;
+        margin-left: 4.1rem;
 
     }
 
@@ -672,13 +701,13 @@ section ,body{
     }
 
 
-    
+
 
 }
 
 /* ------------------6th query--------------------------- */
 
-@media (max-width:377px) {
+@media (max-width:380px) {
 
     #fullwrapper {
         display: block;
@@ -697,6 +726,7 @@ section ,body{
         height: 230px;
         width: 230px;
         border-radius: 50%;
+        margin-left: 2.9rem;
     }
 
     .herotext p {
@@ -710,16 +740,19 @@ section ,body{
 
 
     .socials {
-        margin-left:-0.99rem;
+        margin-left: -0.9900000000000002rem;
 
     }
 
     .btn1 {
-        margin-left: -1.5rem;
+        margin-left:  -0.9900000000000002rem;
+    }
+   
+    #footer_contact p {
+        font-size: 0.70rem;
 
     }
 
-    
 }
 
 /* ------------------7th query--------------------------- */
@@ -745,13 +778,19 @@ section ,body{
     }
 
     #footer_contact {
-        height: 6rem;
+        height: 4.4rem;
+    }
+
+    #footer_contact p {
+        font-size: 0.60rem;
+
     }
 
     .profilepic {
         height: 200px;
         width: 200px;
         border-radius: 50%;
+        margin-left: 3.8rem;
     }
 
     .socials {
